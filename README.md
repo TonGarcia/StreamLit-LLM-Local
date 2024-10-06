@@ -15,6 +15,9 @@
    2. **activate** your local venv: `$ source venv/bin/activate`
    3. **install** depnendencies: `$ pip install -r requirements.txt`
 6. Run StreamLit: `$ streamlit run app.py`
+7. **PS.:** 
+   1. before running the streamlit:app on PyCharm it is necessary to run the command directly on the Terminal
+   2. on the terminal input/insert your email to sign on it 
 
 # Folders Structure
 
