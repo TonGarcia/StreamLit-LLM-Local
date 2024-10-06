@@ -18,6 +18,13 @@
 7. **PS.:** 
    1. before running the streamlit:app on PyCharm it is necessary to run the command directly on the Terminal
    2. on the terminal input/insert your email to sign on it 
+8. **PyCharm Debug**:
+   1. create a config run
+   2. if it raise any error on run/debug just delete and create a new run file:
+      1. set it to **module** instead of _script_
+      2. **module** value = `streamlit`
+      3. **script parameters** = `run app.py`
+      4. 
 
 # Folders Structure
 
