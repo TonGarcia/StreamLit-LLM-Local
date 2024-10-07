@@ -12,7 +12,11 @@
       2. `> python get-pip.py`
 5. Install+Generate+Activate pyenv:
    1. **create** your local venv: `$ python3 -m venv venv`
-   2. **activate** your local venv: `$ source venv/bin/activate`
+   2. **activate** your local venv: 
+      1. MacOS: `$ source venv/bin/activate`
+      2. Windows: 
+         1. GitBash: `>  source venv/Scripts/activate`
+         2. CMD: `> venv\Scripts\activate`
    3. **install** depnendencies: `$ pip install -r requirements.txt`
 6. Run StreamLit: `$ streamlit run app.py`
 7. **PS.:** 
