@@ -18,7 +18,7 @@
       2. MacOS: `$ python3 -m venv venv`
    2. **activate** your local venv: 
       1. MacOS: `$ source venv/bin/activate`
-      2. Windows: 
+      2. Windows:  
          1. GitBash: `>  source venv/Scripts/activate`
          2. CMD: `> venv\Scripts\activate`
    3. **install** depnendencies: `$ pip install -r requirements.txt`
@@ -32,7 +32,6 @@
       1. set it to **module** instead of _script_
       2. **module** value = `streamlit`
       3. **script parameters** = `run app.py`
- 
 
 # Folders Structure
 
