@@ -32,6 +32,10 @@
       1. set it to **module** instead of _script_
       2. **module** value = `streamlit`
       3. **script parameters** = `run app.py`
+   3. **IF** errors like: "asyncio\base_events.py:182" or "Python\Python312\Lib\asyncio\events.py", line 88" **you must disable**  `python.debug.asyncio.repl`:
+      1. click on seach icon (top right near to close button X)
+      2. type on the search input: "registry" and click on "registry..."
+      3. look for `python.debug.asyncio.repl` and uncheck the checkbox
 
 # Folders Structure
 
