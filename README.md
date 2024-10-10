@@ -11,7 +11,11 @@
       1. `> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
       2. `> python get-pip.py`
 5. Install+Generate+Activate pyenv:
-   1. **create** your local venv: `$ python3 -m venv venv`
+   1. **create** your local venv:
+      1. Windows: 
+         1. CMD: `> python -m venv venv`
+         2. GitBash: `$ python -m venv venv`
+      2. MacOS: `$ python3 -m venv venv`
    2. **activate** your local venv: 
       1. MacOS: `$ source venv/bin/activate`
       2. Windows: 
@@ -28,7 +32,7 @@
       1. set it to **module** instead of _script_
       2. **module** value = `streamlit`
       3. **script parameters** = `run app.py`
-      4. 
+ 
 
 # Folders Structure
 
