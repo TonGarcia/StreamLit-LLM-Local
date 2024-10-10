@@ -31,13 +31,19 @@ if user_prompt := st.chat_input("What is up?"):
         response_stream = st.empty()  # Placeholder for streamed content
         full_response = ""
 
-        # Process and stream response in chunks
-        for chunk in chat_manager.response_generator(user_prompt):
-            full_response += chunk
-            response_stream.markdown(full_response)  # Update the placeholder with streamed content
+        try:
+            # Process and stream response in chunks
+            for chunk in chat_manager.response_generator(user_prompt):
+                full_response += chunk
+                response_stream.markdown(full_response)  # Update the placeholder with streamed content
 
-    # Add assistant's full response to chat history
-    st.session_state.messages.append({"role": "assistant", "content": full_response})
+            # Add assistant's full response to chat history
+            st.session_state.messages.append({"role": "assistant", "content": full_response})
+        except Exception as e:
+            # Display the error message
+            error_message = f"Probably OLLAMA service not running. The error exception message: {str(e)}"
+            st.session_state.messages.append({"role": "assistant", "content": error_message})
+            st.error(error_message)
 
 else:
     if len(st.session_state.messages) > 0:
