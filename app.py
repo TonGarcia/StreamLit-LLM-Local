@@ -2,7 +2,7 @@ import streamlit as st
 from src.chat_session_manager import ChatSessionManager
 
 # Streamlit UI entrypoint
-st.title("Simple Chat")
+st.title("PingoChat")
 st.write("Hello 👋")
 
 # Initialize chat history if it doesn't exist
