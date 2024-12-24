@@ -21,7 +21,9 @@
       2. Windows:  
          1. GitBash: `>  source venv/Scripts/activate`
          2. CMD: `> venv\Scripts\activate`
-   3. **install** depnendencies: `$ pip install -r requirements.txt`
+   3. **install** depnendencies: 
+      1. `$ brew install cmake apache-arrow`
+      2. `$ pip install -r requirements.txt`
 6. Run StreamLit: `$ streamlit run app.py`
 7. **PS.:** 
    1. before running the streamlit:app on PyCharm it is necessary to run the command directly on the Terminal
