@@ -1,9 +1,11 @@
 import streamlit as st
 from src.chat_session_manager import ChatSessionManager
 
+chat_session_manager = ChatSessionManager()
+
 # Streamlit UI entrypoint
 st.title("PingoChat")
-st.write("Hello 👋")
+st.write(f"Hello, I am {chat_session_manager.ollama_client.llm_model} 👋")
 
 # Initialize chat history if it doesn't exist
 if "messages" not in st.session_state:
