@@ -1,10 +1,13 @@
 # Ollama Client Connector
+import os
 import ollama
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class OllamaClient:
-    # Ollama Model
-    llm_model = "llama3.2"
+    def __init__(self, model: str | None = None):
+        self.llm_model = model or os.getenv("LLM_MODEL", "llama3.2")
 
     def request(self, prompt):
         try:
